@@ -1,0 +1,2 @@
+-- History marker only: this project did not receive the SQL for this migration.
+-- Keep the file empty so Supabase CLI preserves the linked project's existing schema.
