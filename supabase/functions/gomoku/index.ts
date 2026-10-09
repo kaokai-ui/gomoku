@@ -89,7 +89,7 @@ async function postBody(req: Request): Promise<Record<string, unknown>> {
 
 const fetchHandler = withSupabase({ auth: 'user' }, async (req, ctx) => {
   try {
-    const userId = ctx.userClaims?.sub
+    const userId = ctx.userClaims?.id
     if (typeof userId !== 'string') throw fail(401, 'AUTH_REQUIRED', '請先登入再操作。')
 
     const url = new URL(req.url)
