@@ -1,4 +1,4 @@
-project_id = "gomoku-supabase"
+project_id = "gomoku"
 
 [functions.gomoku]
 verify_jwt = true
